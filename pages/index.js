@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Hero from "@sections/Hero";
-import Technologies from "@sections/Technologies";
-import Testimonials from "@sections/Testimonails";
+import Hero from "@components/sections/Hero";
+import Technologies from "@components/sections/Technologies";
+import Testimonials from "@components/sections/Testimonails";
 
 export default function Home() {
   return (

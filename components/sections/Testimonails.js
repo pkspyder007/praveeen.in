@@ -11,15 +11,14 @@ import {
 function Testimonials() {
   return (
     <div className="container  mx-auto pt-16">
-      {/* PLease install Pure React Carousel using "npm i pure-react-carousel" in order to use this component */}
       <div className="flex flex-wrap rounded-lg" style={{ maxWidth: "88vw" }}>
         <div className="xl:w-2/5 lg:w-2/5 w-full bg-indigo-700 py-16 xl:py-32 px-8 xl:px-16 text-center xl:text-left lg:text-left md:text-left sm:text-left xl:rounded-tl xl:rounded-bl">
           <h1 className="font-extrabold text-4xl text-white pb-2">
-            Our Happy Clients
+            My Happy Clients
           </h1>
           <p className="text-lg text-white">
-            Our takeout just went throughout the roof because we could be taking
-            five orders at one time instead of one order at a time.
+            My take on the projects is to Develop, Iterate, Deliver. Know what
+            my other have to say about me
           </p>
         </div>
         <div className="lg:w-3/5 xl:w-3/5 bg-gray-200 pl-4 pt-4 pb-4 pr-4 xl:pr-10 xl:pl-0 xl:pt-10 xl:pb-10 xl:rounded-tr xl:rounded-br relative">

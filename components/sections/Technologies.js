@@ -10,7 +10,7 @@ export default function Technologies() {
           </div>
         </div>
       </section> */}
-      <section className="mx-auto">
+      <section className="mx-auto mt-16">
         <div className="container px-5 mx-auto lg:px-24 lg:py-48">
           <div className="flex flex-col w-full mb-12 text-center">
             <h1 className="mb-6 text-4xl font-semibold text-black-800 title-font">
