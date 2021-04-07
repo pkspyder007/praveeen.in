@@ -37,7 +37,7 @@ function Testimonials() {
                   <div className="relative bg-white">
                     <img
                       src="https://cdn.tuk.dev/assets/qoute-1.png"
-                      alt
+                      alt="Client"
                       className="absolute mt-4 pl-6 sm:pl-12"
                     />
                     <div className="pt-20 px-6 sm:px-12">
@@ -59,7 +59,7 @@ function Testimonials() {
                           <div className="h-12 w-12">
                             <img
                               src="https://tuk-cdn.s3.amazonaws.com/assets/components/testimonials/t_1.png"
-                              alt
+                              alt="Client"
                               className="h-full w-full object-cover overflow-hidden rounded-full"
                             />
                           </div>
@@ -80,7 +80,7 @@ function Testimonials() {
                   <div className="relative bg-white">
                     <img
                       src="https://cdn.tuk.dev/assets/qoute-1.png"
-                      alt
+                      alt="Client"
                       className="absolute -mt-4 pl-6 sm:pl-12"
                     />
                     <div className="pt-20 px-6 sm:px-12">
@@ -102,7 +102,7 @@ function Testimonials() {
                           <div className="h-12 w-12">
                             <img
                               src="https://cdn.tuk.dev/assets/templates/Project+Management/pm_15.png"
-                              alt
+                              alt="Client"
                               className="h-full w-full object-cover overflow-hidden rounded-full"
                             />
                           </div>
@@ -123,7 +123,7 @@ function Testimonials() {
                   <div className="relative bg-white">
                     <img
                       src="https://cdn.tuk.dev/assets/qoute-1.png"
-                      alt
+                      alt="Client"
                       className="absolute -mt-4 pl-6 sm:pl-12"
                     />
                     <div className="pt-20 px-6 sm:px-12">
@@ -145,7 +145,7 @@ function Testimonials() {
                           <div className="h-12 w-12">
                             <img
                               src="https://cdn.tuk.dev/assets/templates/Project+Management/pm_18.png"
-                              alt
+                              alt="Client"
                               className="h-full w-full object-cover overflow-hidden rounded-full"
                             />
                           </div>
@@ -177,7 +177,6 @@ function Testimonials() {
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    onclick="movePrev()"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <polyline points="15 6 9 12 15 18" />
@@ -197,7 +196,6 @@ function Testimonials() {
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    onclick="moveForward()"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <polyline points="9 6 15 12 9 18" />
