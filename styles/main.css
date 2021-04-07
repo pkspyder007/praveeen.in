@@ -1,0 +1,17 @@
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/* mongodb svg */
+.cls-1 {
+  fill: #10aa50;
+}
+.cls-2 {
+  fill: #b8c4c2;
+}
+.cls-3 {
+  fill: #12924f;
+}
+.cls-4 {
+  fill: #21313c;
+}
