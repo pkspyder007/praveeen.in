@@ -14,10 +14,10 @@ export default function Hero() {
             help you in bringing your ideas to life.
           </p>
           <div className="flex justify-center">
-            <button className="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-200 hover:text-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+            <button className="flex items-center px-6 py-3 mt-auto text-lg font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded hover:bg-gray-200 hover:text-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
               Let's Talk
             </button>
-            <button className="flex items-center px-6 py-2 ml-4 mt-auto font-semibold text-black transition duration-500 ease-in-out transform bg-gray-200 rounded-lg hover:bg-gray-800 hover:to-black hover:text-white focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+            <button className="flex items-center px-6 py-3 ml-4 mt-auto text-lg font-semibold text-black transition duration-500 ease-in-out transform bg-gray-200 rounded hover:bg-gray-800 hover:to-black hover:text-white focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
               Explore More
             </button>
           </div>
