@@ -30,30 +30,30 @@ export default function Header() {
           id="menu"
         >
           <nav>
-            <ul className="lg:flex items-center justify-between text-base text-white-700 pt-4 lg:pt-0">
+            <ul className="lg:flex font-bold items-center justify-between text-base text-white-700 pt-4 lg:pt-0">
               <li>
-                <Link href="/team">
+                <Link href="/about">
                   <span className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white">
                     About
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/team">
+                <Link href="/work">
                   <span className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white">
                     Work
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/team">
+                <Link href="https://blog.praveeen.in">
                   <span className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white">
                     Blog
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/team">
+                <Link href="/contact">
                   <span className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-white">
                     Contact
                   </span>

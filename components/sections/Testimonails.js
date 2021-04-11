@@ -11,14 +11,19 @@ import {
 function Testimonials() {
   return (
     <div className="container  mx-auto pt-16">
+      <div className="flex flex-col w-full mb-12 text-center">
+        <h1 className="mb-6 underline text-4xl lg:text-6xl font-semibold text-black-800 title-font">
+          Testimonials
+        </h1>
+      </div>
       <div className="flex flex-wrap rounded-lg" style={{ maxWidth: "88vw" }}>
         <div className="xl:w-2/5 lg:w-2/5 w-full bg-indigo-700 py-16 xl:py-32 px-8 xl:px-16 text-center xl:text-left lg:text-left md:text-left sm:text-left xl:rounded-tl xl:rounded-bl">
           <h1 className="font-extrabold text-4xl text-white pb-2">
-            My Happy Clients
+            Read what others have to say about my work.
           </h1>
           <p className="text-lg text-white">
             My take on the projects is to Develop, Iterate, Deliver. Know what
-            my other have to say about me
+            my other have to say about me.
           </p>
         </div>
         <div className="lg:w-3/5 xl:w-3/5 bg-gray-200 pl-4 pt-4 pb-4 pr-4 xl:pr-10 xl:pl-0 xl:pt-10 xl:pb-10 xl:rounded-tr xl:rounded-br relative">

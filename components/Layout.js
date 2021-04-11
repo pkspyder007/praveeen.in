@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout(props) {
@@ -8,6 +9,7 @@ export default function Layout(props) {
       <main className="flex-1 lg:container px-4 py-6 mx-auto md:px-6 md:py-12">
         {props.children}
       </main>
+      <Footer />
     </div>
   );
 }
