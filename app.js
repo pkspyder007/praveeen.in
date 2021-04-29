@@ -6,17 +6,44 @@ const cardColors = [
   "#50919f",
   "#1655e7",
   "#fac473",
+  "#EF233C",
 ];
 
 // random card color
-const we = document.querySelectorAll("#work .card-container");
+const we = document.querySelectorAll(".card-container");
 
 we.forEach((card, i) => {
-  card.style.backgroundColor = cardColors[i];
+  card.style.backgroundColor = cardColors[i % cardColors.length];
 });
 
-const projects = document.querySelectorAll("#projects .card-container");
-
-projects.forEach((card, i) => {
-  card.style.backgroundColor = cardColors[cardColors.length - i - 1];
+const swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: false,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+// menu
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    nav.classList.add("active");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    nav.classList.remove("active");
+    menuOpen = false;
+  }
 });

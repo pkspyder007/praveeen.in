@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -21,6 +29,9 @@
     <!-- nav -->
     <header>
       <div class="logo">Praveen Kumar</div>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
       <nav>
         <ul>
           <li class="hover-underline-animation">Work Experiences</li>
@@ -42,7 +53,21 @@
     <!-- nav-end -->
 
     <!-- hero -->
-    <main>TO BE CONTINUED</main>
+    <main>
+      <div>
+        <img src="./images/praveen.jpeg" alt="Praveen Kumar" />
+        <div class="hello">
+          <h1>Hi, I'm Praveen Kumar</h1>
+        </div>
+        <p>
+          I'm a web developer and I have spent the last three years creating
+          amazing things for companies and clients. I'am always happy to talk
+          about working together, new opportunities or speaking at your event.
+          Or if you just want to catch up for a coffee, that's cool too.
+        </p>
+        <button class="cta bs">Connect with Me</button>
+      </div>
+    </main>
     <!-- hero-end -->
 
     <!-- work -->
@@ -50,52 +75,77 @@
       <h1 class="title hover-underline-animation">Work Experiences</h1>
       <h2 class="subtitle">Here are my previous work experiences</h2>
       <div class="card-grid-container">
-        <div class="card-container">
+        <div class="card-container bs">
           <p class="card-icon">1</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Bay Street Innovation</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >UI & Frontend Deveoper</span
+            >
+            <br />
+            <br />
+            Developed a responsive static site using <u>Next.js</u>
           </p>
         </div>
-        <div class="card-container">
+        <div class="card-container bs">
           <p class="card-icon">2</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Xoolooloo</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >Full Stack Developer</span
+            >
+            <br />
+            <br />
+            Developed backend system as per business requirements using
+            <u>Node.js</u> and <u>MongoDB</u>
           </p>
         </div>
-        <div class="card-container">
+        <div class="card-container bs">
           <p class="card-icon">3</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Wittalks</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >Web and UI Developer</span
+            >
+            <br /><br />
+            Developed a news content website using <u>Wordpress</u> &
+            <u>Hostinger</u>
           </p>
         </div>
-        <div class="card-container">
+        <div class="card-container bs">
           <p class="card-icon">4</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">IIIT Una</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >Full Stack Developer</span
+            >
+            <br /><br />
+            Developed an admission portal for the college during thr covid using
+            <u>MERN</u> stack and <u>AWS</u>
           </p>
         </div>
-        <div class="card-container">
+        <div class="card-container bs">
           <p class="card-icon">5</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">GitBlack</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >UI & Frontend Deveoper</span
+            >
+            <br /><br />
+            Build an online platform for E-education and online test using
+            <u>React.js</u>
           </p>
         </div>
-        <div class="card-container">
-          <p class="card-icon">6</p>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+        <div class="card-container bs">
+          <div class="card-icon">6</div>
+          <p class="card-title">Rinnegan Technologies</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            <span class="bold hover-underline-animation"
+              >Jr. Web Dev Intern</span
+            >
+            <br /><br />
+            Worked with the team to deliver a Documentation Management system
+            using <u>MERN</u> stack and <u>Firebase</u>
           </p>
         </div>
       </div>
@@ -103,6 +153,90 @@
     <!-- work-end -->
 
     <!-- testimonials -->
+    <section id="testimonial">
+      <h1 class="title hover-underline-animation">Testimonials</h1>
+      <h2 class="subtitle">Hear what my clients say about my work.</h2>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/pattern-bg.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Rinnegan Technologies</p>
+              <p class="card-desc">
+                Jr. Web Dev Intern <br /><br />
+                Worked with the team to deliver a Documentation Management
+                system using <u>MERN</u> stack and <u>Firebase</u>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/rand3.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, libero.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/rand3.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, libero.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/rand3.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, libero.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/rand3.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, libero.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-container bs">
+              <div class="card-head-image">
+                <img src="./images/rand3.svg" alt="Project 1" />
+              </div>
+              <p class="card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, libero.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <!-- testimonials-end -->
 
     <!-- projects -->
@@ -112,8 +246,7 @@
         Fun stuff I love to do while learning new things.
       </h2>
       <div class="card-grid-container">
-        <div class="card-container">
-          <p class="card-icon">1</p>
+        <div class="card-container bs">
           <div class="card-head-image">
             <img src="./images/rand1.svg" alt="Project 1" />
           </div>
@@ -123,8 +256,7 @@
             adipisicing elit. Tenetur, libero.
           </p>
         </div>
-        <div class="card-container">
-          <p class="card-icon">2</p>
+        <div class="card-container bs">
           <div class="card-head-image">
             <img src="./images/rand3.svg" alt="Project 1" />
           </div>
@@ -134,8 +266,7 @@
             adipisicing elit. Tenetur, libero.
           </p>
         </div>
-        <div class="card-container">
-          <p class="card-icon">3</p>
+        <div class="card-container bs">
           <div class="card-head-image">
             <img src="./images/pattern-bg.svg" alt="Project 1" />
           </div>
@@ -145,8 +276,7 @@
             adipisicing elit. Tenetur, libero.
           </p>
         </div>
-        <div class="card-container">
-          <p class="card-icon">4</p>
+        <div class="card-container bs">
           <div class="card-head-image">
             <img src="./images/rand4.svg" alt="Project 1" />
           </div>
@@ -161,11 +291,116 @@
     <!-- projects-end -->
 
     <!-- Talks -->
+    <section id="talks">
+      <h1 class="title hover-underline-animation">Talks</h1>
+      <h2 class="subtitle">
+        I love speaking at talk, webinars, conferences, etc. Here are some of my
+        previous talks.
+      </h2>
+      <div class="card-grid-container">
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/rand1.svg" alt="Project 1" />
+          </div>
+          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur, libero.
+          </p>
+        </div>
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/rand3.svg" alt="Project 1" />
+          </div>
+          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur, libero.
+          </p>
+        </div>
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/pattern-bg.svg" alt="Project 1" />
+          </div>
+          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur, libero.
+          </p>
+        </div>
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/rand4.svg" alt="Project 1" />
+          </div>
+          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur, libero.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Talks-end -->
 
     <!-- contact -->
+    <section id="contact">
+      <h1 class="title hover-underline-animation">Connect with me</h1>
+      <h2 class="subtitle">
+        You can react out to me by any of the platform below or just drop a
+        message in this form and it will reach my inbox.
+      </h2>
+      <div class="socials">
+        <ul>
+          <li class="animation">
+            <a href="" class="icon-button linkedIn" target="_blank"
+              ><i class="fab fa-linkedin"></i
+              ><span class="hover-underline-animation">LinkedIn</span></a
+            >
+          </li>
+          <li class="animation">
+            <a href="" class="icon-button twitter" target="_blank"
+              ><i class="fab fa-twitter"></i
+              ><span class="hover-underline-animation">Twitter</span></a
+            >
+          </li>
+          <li class="animation">
+            <a href="" class="icon-button instagram" target="_blank"
+              ><i class="fab fa-instagram"></i
+              ><span class="hover-underline-animation">Instagram</span></a
+            >
+          </li>
+          <li class="animation">
+            <a href="" class="icon-button email" target="_blank"
+              ><i class="fas fa-envelope"></i
+              ><span class="hover-underline-animation">Email</span></a
+            >
+          </li>
+          <li class="animation">
+            <a href="" class="icon-button phone" target="_blank"
+              ><i class="fas fa-phone"></i
+              ><span class="hover-underline-animation">Phone</span></a
+            >
+          </li>
+          <li class="animation">
+            <a href="" class="icon-button gh" target="_blank"
+              ><i class="fab fa-github"></i
+              ><span class="hover-underline-animation">Github</span></a
+            >
+          </li>
+        </ul>
+        <form>
+          <input type="text" placeholder="Your Name" name="name" />
+          <input type="email" placeholder="Email" name="email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button class="contact">
+            Send Now <i class="far fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
     <!-- contact-end -->
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
