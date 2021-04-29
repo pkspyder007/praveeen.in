@@ -24,22 +24,41 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_LV9JRnpzAoJjJtuqv4FPL");
+      })();
+    </script>
   </head>
   <body>
     <!-- nav -->
-    <header>
+    <header id="head">
       <div class="logo">Praveen Kumar</div>
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
       <nav>
         <ul>
-          <li class="hover-underline-animation">Work Experiences</li>
-          <li class="hover-underline-animation">Testimonials</li>
-          <li class="hover-underline-animation">Projects</li>
-          <li class="hover-underline-animation">Talks</li>
-          <li class="hover-underline-animation">Blog</li>
-          <li class="hover-underline-animation">Contact</li>
+          <li class="hover-underline-animation">
+            <a href="#work">Work Experiences</a>
+          </li>
+          <li class="hover-underline-animation">
+            <a href="#testimonial">Testimonials</a>
+          </li>
+          <li class="hover-underline-animation">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hover-underline-animation"><a href="#talks">Talks</a></li>
+          <li class="hover-underline-animation">
+            <a href="https://blog.praveeen.in" target="_blank">Blog</a>
+          </li>
+          <li class="hover-underline-animation">
+            <a href="#contact">Contact</a>
+          </li>
           <li class="">
             <a href="https://www.buymeacoffee.com/praveeen" target="_blank"
               ><img
@@ -55,7 +74,7 @@
     <!-- hero -->
     <main>
       <div>
-        <img src="./images/praveen.jpeg" alt="Praveen Kumar" />
+        <img src="./images/praveen-cn.jpeg" alt="Praveen Kumar" />
         <div class="hello">
           <h1>Hi, I'm Praveen Kumar</h1>
         </div>
@@ -65,7 +84,7 @@
           about working together, new opportunities or speaking at your event.
           Or if you just want to catch up for a coffee, that's cool too.
         </p>
-        <button class="cta bs">Connect with Me</button>
+        <a href="#contact"><button class="cta bs">Connect with Me</button></a>
       </div>
     </main>
     <!-- hero-end -->
@@ -162,19 +181,6 @@
           <div class="swiper-slide">
             <div class="card-container bs">
               <div class="card-head-image">
-                <img src="./images/pattern-bg.svg" alt="Project 1" />
-              </div>
-              <p class="card-title">Rinnegan Technologies</p>
-              <p class="card-desc">
-                Jr. Web Dev Intern <br /><br />
-                Worked with the team to deliver a Documentation Management
-                system using <u>MERN</u> stack and <u>Firebase</u>
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-container bs">
-              <div class="card-head-image">
                 <img src="./images/rand3.svg" alt="Project 1" />
               </div>
               <p class="card-title">Lorem ipsum dolor sit amet.</p>
@@ -248,44 +254,135 @@
       <div class="card-grid-container">
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/rand1.svg" alt="Project 1" />
+            <img src="./images/rand1.svg" alt="Youtube chat maderator" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">YouTube live chat moderator</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            Built in <u>Express.js</u> and <u>Youtube Live chat API</u> this
+            program warns the commentor in live chat for using forbidden works.
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/youtube-live-chat-moderator"
+              target="__blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/rand3.svg" alt="Project 1" />
+            <img src="./images/rand3.svg" alt="LiqrCart" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">LiqrCart - E-commerce platform</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            Developed as an POC for a liquor delivery service during COVID
+            lockdown. It provides an platform for vendors and clients to buy
+            liquor without contact
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/mern-stack-ecommerce"
+              target="__blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/pattern-bg.svg" alt="Project 1" />
+            <img src="./images/pattern-bg.svg" alt="Custom react.js hooks" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Custom React Hooks</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            Collection of hooks in React.js for performing some routine tasks
+            like <u>Data fetching</u>, <u>Theme Toggling</u>, etc.
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/custom-react-hooks"
+              target="__blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/rand4.svg" alt="Project 1" />
+            <img src="./images/rand1.svg" alt="Shopify Awards Project" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Shoppies Awards</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            A movies nomination app using <u>OMDB API</u> and
+            <u>React.js</u> with cool small features like nomination, sharing,
+            etc.
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/shoppies"
+              target="__blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
+            <a
+              href="https://shopifynominees.netlify.app/"
+              target="__blank"
+              class="w-bg"
+              >Live Site <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/rand4.svg" alt="E-Price Tracker" />
+          </div>
+          <p class="card-title">E-Price Tracker</p>
+          <p class="card-desc">
+            A full-stack price tracker for Amazon and Flipkart in MERN stack, It
+            notifies you whenever prices drops below the thresold value set by
+            you. etc. <u>Was selected for finals at techfest of NIT KKR</u>
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/Excalibur"
+              target="__blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
+          </p>
+        </div>
+        <div class="card-container bs">
+          <div class="card-head-image">
+            <img src="./images/rand2.svg" alt="OSS Una" />
+          </div>
+          <p class="card-title">OSS Una website</p>
+          <p class="card-desc">
+            A responsive website made with <u>React.js</u> and
+            <u>Styled Components</u> for the open source society of Una.
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/oss-iiitu"
+              target="_blank"
+              class="w-bg"
+              >Github <i class="fas fa-arrow-right"></i
+            ></a>
+            <a
+              href="https://pkspyder007.github.io/oss-iiitu/"
+              target="_blank"
+              class="w-bg"
+              >Live Site <i class="fas fa-arrow-right"></i
+            ></a>
+          </p>
+        </div>
+        <h1 class="subtitle">
+          <a
+            href="https://github.com/pkspyder007"
+            class="hover-underline-animation"
+            target="_blank"
+            >Check out my github for more <i class="fab fa-github"></i
+          ></a>
+        </h1>
       </div>
     </section>
     <!-- projects-end -->
@@ -300,42 +397,40 @@
       <div class="card-grid-container">
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/rand1.svg" alt="Project 1" />
+            <img src="./images/rand1.svg" alt="Starting with open source" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">Getting started with Open Source.</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            Had a great time talking with new developer starting there open
+            source journey through GSSOC. Have a look at the contributor map we
+            created in that session.
+            <br />
+            <br />
+            <a
+              href="https://github.com/pkspyder007/codu-map"
+              target="__blank"
+              class="w-bg"
+              >Goto Code <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
         <div class="card-container bs">
           <div class="card-head-image">
-            <img src="./images/rand3.svg" alt="Project 1" />
+            <img src="./images/rand3.svg" alt="URL shortner in nodejs" />
           </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
+          <p class="card-title">URL-Shortner in Node.js</p>
           <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
-          </p>
-        </div>
-        <div class="card-container bs">
-          <div class="card-head-image">
-            <img src="./images/pattern-bg.svg" alt="Project 1" />
-          </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
-          </p>
-        </div>
-        <div class="card-container bs">
-          <div class="card-head-image">
-            <img src="./images/rand4.svg" alt="Project 1" />
-          </div>
-          <p class="card-title">Lorem ipsum dolor sit amet.</p>
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur, libero.
+            Did a workshop in how to create an authenticated url shortner app
+            using <u>Node.js</u>, <u>MongoDB</u>, <u>Node Mailer</u> at coding
+            ninjas.
+            <br />
+            <br />
+            <a
+              href="https://www.youtube.com/watch?v=A4AWj-ztgnA"
+              target="__blank"
+              class="w-bg"
+              >Watch Now <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
         </div>
       </div>
@@ -344,63 +439,118 @@
 
     <!-- contact -->
     <section id="contact">
+      <canvas id="cft"></canvas>
       <h1 class="title hover-underline-animation">Connect with me</h1>
       <h2 class="subtitle">
-        You can react out to me by any of the platform below or just drop a
-        message in this form and it will reach my inbox.
+        <!-- You can react out to me by any of the platform below or just drop a
+        message in this form and it will reach my inbox. -->
+        Have a question I can answer? Want to hire me? Or are you looking for
+        collaboration? You can reach me on
+        <a
+          href="https://twitter.com/pkspyder007"
+          class="icon-button linkedIn"
+          target="_blank"
+          ><span class="hover-underline-animation"><u>Twitter</u></span></a
+        >
+        or
+        <a
+          href="https://www.linkedin.com/in/praveen-kumar-8512b4189/"
+          class="icon-button linkedIn"
+          target="_blank"
+          ><span class="hover-underline-animation"><u>LinkedIn</u></span></a
+        >
+        for a quick response. Or you can email me at hello@praveeen.in Or fill
+        in the form below and this will land straight in my inbox 😎
       </h2>
       <div class="socials">
         <ul>
           <li class="animation">
-            <a href="" class="icon-button linkedIn" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/praveen-kumar-8512b4189/"
+              class="icon-button linkedIn"
+              target="_blank"
               ><i class="fab fa-linkedin"></i
               ><span class="hover-underline-animation">LinkedIn</span></a
             >
           </li>
           <li class="animation">
-            <a href="" class="icon-button twitter" target="_blank"
+            <a
+              href="https://twitter.com/pkspyder007"
+              class="icon-button twitter"
+              target="_blank"
               ><i class="fab fa-twitter"></i
               ><span class="hover-underline-animation">Twitter</span></a
             >
           </li>
           <li class="animation">
-            <a href="" class="icon-button instagram" target="_blank"
+            <a
+              href="https://instagram.com/pkspyder007"
+              class="icon-button instagram"
+              target="_blank"
               ><i class="fab fa-instagram"></i
               ><span class="hover-underline-animation">Instagram</span></a
             >
           </li>
           <li class="animation">
-            <a href="" class="icon-button email" target="_blank"
+            <a href="mailto:hello@praveeen.in" class="icon-button email"
               ><i class="fas fa-envelope"></i
               ><span class="hover-underline-animation">Email</span></a
             >
           </li>
           <li class="animation">
-            <a href="" class="icon-button phone" target="_blank"
+            <a
+              href="tel:+917017243897"
+              class="icon-button phone"
+              target="_blank"
               ><i class="fas fa-phone"></i
               ><span class="hover-underline-animation">Phone</span></a
             >
           </li>
           <li class="animation">
-            <a href="" class="icon-button gh" target="_blank"
+            <a
+              href="https://github.com/pkspyder007"
+              class="icon-button gh"
+              target="_blank"
               ><i class="fab fa-github"></i
               ><span class="hover-underline-animation">Github</span></a
             >
           </li>
         </ul>
-        <form>
-          <input type="text" placeholder="Your Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button class="contact">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+          <input type="text" placeholder="Your Name" name="user_name" />
+          <input type="email" placeholder="Email" name="user_email" />
+          <textarea placeholder="Your Message" name="message"></textarea>
+          <button class="contact" type="submit">
             Send Now <i class="far fa-paper-plane"></i>
           </button>
         </form>
       </div>
+      <!-- Modal -->
+      <div class="body-blackout"></div>
+
+      <div class="popup-modal shadow">
+        <i class="fas fa-times popup-modal__close"></i>
+        <h1 class="">
+          Oops something went wrong. Try some another method for reaching me
+          out...
+        </h1>
+      </div>
     </section>
     <!-- contact-end -->
 
+    <!-- footer -->
+    <footer>
+      <p>Praveen Kumar © 2021</p>
+    </footer>
+    <!-- footer-end -->
+
+    <div class="up">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

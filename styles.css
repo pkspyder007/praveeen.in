@@ -21,6 +21,37 @@ font-family: 'Nunito', sans-serif; */
   --card-color-7: #fd9b01;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active,
+a:any-link {
+  color: var(--text-color-light);
+}
+
+.up {
+  display: none;
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.up:hover {
+  background-color: var(--bg-color-dark);
+}
+
 body {
   color: var(--text-color-light);
   max-width: 2560px;
@@ -143,6 +174,7 @@ body > header > nav > ul > li:nth-child(7) > a > img {
   font-weight: normal;
   font-family: "Nunito", sans-serif;
   margin: 12px 6px;
+  line-height: 1.5em;
 }
 
 .hover-underline-animation:after {
@@ -228,8 +260,9 @@ button.contact {
   border: none;
   border-radius: 3px;
   color: var(--text-color-light);
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1em;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
   cursor: pointer;
   margin-top: 12px;
 }
@@ -256,6 +289,10 @@ main img {
   margin-top: 3em;
 }
 
+/* relative for modal */
+#contact {
+  position: relative;
+}
 .card-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -377,6 +414,81 @@ textarea {
 }
 .icon-button i:hover {
   color: var(--primary-color);
+}
+
+#cft {
+  position: absolute;
+  max-width: 80vw;
+  min-height: 80vh;
+  display: none;
+}
+
+.w-bg {
+  transition: all 0.3s ease-in-out;
+}
+
+.w-bg:hover {
+  padding: 0.6em;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  margin-top: 2em;
+}
+
+/* modal */
+.body-blackout {
+  position: absolute;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+.body-blackout.is-blacked-out {
+  display: block;
+}
+
+.popup-modal {
+  max-height: 365px;
+  max-width: 650px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 45px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+  z-index: 1011;
+  color: var(--text-color-dark);
+  border-radius: 5px;
+}
+
+.popup-modal h1 {
+  font-size: 1.2em;
+}
+
+.popup-modal.is--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup-modal__close {
+  position: absolute;
+  font-size: 2rem;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
