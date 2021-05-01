@@ -50,6 +50,8 @@ a:any-link {
 
 .up:hover {
   background-color: var(--bg-color-dark);
+  transform: rotate(360deg);
+  color: var(--primary-color);
 }
 
 body {
@@ -60,8 +62,18 @@ body {
   background-color: #120d31;
 }
 
+/* All section backgrounds */
+body,
+#projects,
+#talks,
+#contact {
+  background-image: url(images/bg/blob.svg);
+  background-size: auto 75vw;
+  background-repeat: no-repeat;
+}
+
 nav {
-  background-color: #120d31;
+  /* background-color: #120d31; */
   color: var(--text-color-light);
 }
 
@@ -279,7 +291,7 @@ main img {
 #contact,
 #testimonial {
   padding: 1em 2em;
-  margin-top: 10vh;
+  padding-top: 10vh;
 }
 
 #work > .card-grid-container,
@@ -363,6 +375,10 @@ main img {
   background: var(--text-color-light);
 }
 
+#contact {
+  padding-bottom: 5em;
+}
+
 #contact a {
   color: var(--text-color-light);
   font-size: 1.2em;
@@ -440,7 +456,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
-  margin-top: 2em;
+  /* margin-top: 2em; */
 }
 
 /* modal */
@@ -489,6 +505,16 @@ footer {
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+::-moz-selection {
+  color: var(--text-color-light);
+  background: var(--primary-color);
+}
+
+::selection {
+  color: var(--text-color-light);
+  background: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
