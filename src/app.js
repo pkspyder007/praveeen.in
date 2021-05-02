@@ -81,8 +81,12 @@ const cardColors = [
 
 // random card color
 const we = document.querySelectorAll(".card-container");
-const clickSound = new Audio("./audio/click--two.mp3");
-const popSound = new Audio("./audio/pop.mp3");
+
+const clickMp3 = require("./audio/click--two.mp3");
+const popMp3 = require("./audio/pop.mp3");
+const clickSound = new Audio(clickMp3);
+const popSound = new Audio(popMp3);
+
 we.forEach((card, i) => {
   card.style.backgroundColor = cardColors[i % cardColors.length];
   card.addEventListener("mousedown", (e) => {
@@ -90,7 +94,7 @@ we.forEach((card, i) => {
   });
 });
 
-document.querySelector(".menu-btn").addEventListener("click", () => {
+document.querySelector(".menu-btn").addEventListener("mousedown", () => {
   clickSound.play();
 });
 
@@ -102,7 +106,7 @@ document.querySelector(".up").addEventListener("click", () => {
   clickSound.play();
 });
 
-document.querySelectorAll("nav a").forEach((link) => {
+document.querySelectorAll("nav li").forEach((link) => {
   link.addEventListener("click", () => {
     clickSound.play();
     if (menuOpen) {

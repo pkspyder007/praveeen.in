@@ -1,0 +1,17 @@
+{
+  "name": "praveeen.in",
+  "version": "1.0.0",
+  "description": "Portfolio site built with vanilla HTML,CSS and JS",
+  "main": "dist/index.html",
+  "repository": "https://github.com/pkspyder007/praveeen.in.git",
+  "author": "Praveen Kumar <pkspyder007@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "parcel src/index.html src/404.html",
+    "build": "parcel build src/index.html src/404.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

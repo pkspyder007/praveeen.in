@@ -1,3 +1,5 @@
+const img = require("./images/praveen-cn.jpeg");
+
 var e = {
     load: function (e) {
       var o =
@@ -47,7 +49,7 @@ var e = {
   o = function () {
     console.clear();
     console.info("%c Glad You Are Here! 👋", "font-size: 2rem;");
-    e.load("/images/praveen-cn.jpeg", {
+    e.load(img, {
       size: 80,
       cb: function () {
         console.info(
@@ -57,11 +59,6 @@ var e = {
           console.info("Mail me @ hello@praveeen.in"),
           console.info(
             "Check out fun stuff on Github! https://github.com/pkspyder007"
-          ),
-          console.info("Thanks for stopping by"),
-          console.info(
-            "%cStay awesome!",
-            "font-size: 1.5rem; font-style: italic;"
           );
       },
     });
