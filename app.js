@@ -103,8 +103,13 @@ document.querySelector(".up").addEventListener("click", () => {
 });
 
 document.querySelectorAll("nav a").forEach((link) => {
-  link.addEventListener("mousedown", () => {
+  link.addEventListener("click", () => {
     clickSound.play();
+    if (menuOpen) {
+      menuBtn.classList.remove("open");
+      nav.classList.remove("active");
+      menuOpen = false;
+    }
   });
 });
 
