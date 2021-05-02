@@ -164,8 +164,7 @@ header > nav > ul > li {
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
-
-body > header > nav > ul > li:nth-child(7) > a > img {
+img.buymeacoffee {
   max-width: 154px;
   padding: 0;
   margin-top: -12px;
