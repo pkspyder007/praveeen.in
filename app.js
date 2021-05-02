@@ -81,9 +81,31 @@ const cardColors = [
 
 // random card color
 const we = document.querySelectorAll(".card-container");
-
+const clickSound = new Audio("./audio/click--two.mp3");
+const popSound = new Audio("./audio/pop.mp3");
 we.forEach((card, i) => {
   card.style.backgroundColor = cardColors[i % cardColors.length];
+  card.addEventListener("mousedown", (e) => {
+    popSound.play();
+  });
+});
+
+document.querySelector(".menu-btn").addEventListener("click", () => {
+  clickSound.play();
+});
+
+document.querySelector("button").addEventListener("mousedown", () => {
+  popSound.play();
+});
+
+document.querySelector(".up").addEventListener("click", () => {
+  clickSound.play();
+});
+
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("mousedown", () => {
+    clickSound.play();
+  });
 });
 
 const swiper = new Swiper(".swiper-container", {

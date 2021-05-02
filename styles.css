@@ -10,15 +10,9 @@ font-family: 'Nunito', sans-serif; */
   --primary-color: #ef233c;
   --bg-color-dark: #120d31;
   --text-color-light: #fffbff;
-  --text-color-dark: #353335;
+  --text-color-dark: #c05dc0;
   --border-radius-sm: 6px;
   --card-color-1: #1a9561;
-  --card-color-2: #3f3bd8;
-  --card-color-3: #1655e7;
-  --card-color-4: #9fa8bb;
-  --card-color-5: #50919f;
-  --card-color-6: #fac473;
-  --card-color-7: #fd9b01;
 }
 
 html {
@@ -56,7 +50,7 @@ a:any-link {
 
 body {
   color: var(--text-color-light);
-  max-width: 2560px;
+  max-width: 1920;
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   background-color: #120d31;
@@ -66,10 +60,21 @@ body {
 body,
 #projects,
 #talks,
-#contact {
+#testimonial {
   background-image: url(images/bg/blob.svg);
   background-size: auto 75vw;
   background-repeat: no-repeat;
+}
+
+#contact {
+  background-image: url(images/bg/blob.svg), url(images/bg/blob.svg);
+  background-size: auto 75vw;
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+
+#work {
+  background-image: none;
 }
 
 nav {
@@ -534,7 +539,11 @@ footer {
   header {
     margin-top: 1em;
   }
-
+  #work {
+    background-image: url(images/bg/blob.svg);
+    background-size: auto 75vw;
+    background-repeat: no-repeat;
+  }
   nav {
     position: absolute;
     display: flex;
