@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HELP | DEEPAK</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <style>
+      .main {
+        text-align: center;
+      }
+
+      .main img {
+        max-width: 50%;
+        max-height: 100%;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .info > .infooo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .infooo div {
+        font-size: 2rem;
+        display: flex;
+        align-items: flex-start;
+        margin: 6px 0;
+        font-weight: bold;
+      }
+
+      .infooo button {
+          margin-left: 24px;
+      }
+      @media (max-width: 600px) {
+        .info {
+          flex-direction: column;
+        }
+
+        .info img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container main">
+      <h1>Please help Deepak in raising funds for his father's treatement</h1>
+      <h3>Every small donation will make a big impact</h3>
+      <div class="info">
+        <img src="qr.jpeg" alt="Deepak PhonePe QR" />
+        <div class="infooo">
+          <h2>Payment Details</h2>
+          <div
+            >
+            <p>No - 7266070069 - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="7266070069"
+            >
+              COPY
+            </button></div
+          >
+          <div
+            ><p>UPI - dp0774138@oksbi - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="dp0774138@oksbi"
+            >
+              COPY
+            </button></div
+          >
+          <div
+            ><p>Account No. - 38835262138 - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="38835262138"
+            >
+              COPY
+            </button>
+          </div>
+          <div
+            ><p>IFSC - SBIN0050234 - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="SBIN0050234"
+            >
+              COPY
+            </button></div
+          >
+          <div
+            ><p>State Bank of India - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="State Bank of India"
+            >
+              COPY
+            </button></div
+          >
+          <div
+            ><p>Name - Deepak Prajapati - </p>
+            <button
+              class="ml-2 btn btn-sm btn-info"
+              data-clipboard-text="Deepak Prajapati"
+            >
+              COPY
+            </button></div
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+      var clipboard = new ClipboardJS('button')
+  </script>
+</html>
