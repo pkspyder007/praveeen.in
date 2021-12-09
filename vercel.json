@@ -1,6 +1,6 @@
 {
     "rewrites": [
         { "source": "/blog", "destination": "https://blog-green-eight.vercel.app" },
-        { "source": "/blog(.*)", "destination": "https://blog-green-eight.vercel.app$1" }
+        { "source": "/blog/:match*", "destination": "https://blog-green-eight.vercel.app/:match*" }
     ]
 }
